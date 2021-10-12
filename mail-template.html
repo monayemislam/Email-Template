@@ -6,86 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Template</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        .wrapper {
-            padding: 20px 25px;
-            background-color: white;
-        }
-
-        .content-container {
-            display: flex;
-            flex-direction: row;
-            margin: 0 auto !important;
-            width: 60%;
-        }
-
-        .left-section {
-            padding: 10px;
-            flex: 30%;
-        }
-
-        .right-section {
-            padding: 10px;
-            flex: 70%;
-        }
-
-        /* Column Breakpoint */
-        @media (max-width: 800px) {
-            .content-container {
-                flex-direction: column;
-            }
-        }
-
-        .logo {
-            max-width: 140px;
-            height: 30px;
-            vertical-align: middle;
-        }
-
-        .verification-text {
-            padding-top: 5px;
-            text-align: right;
-        }
-
-        .hr {
-            border-top: 2px solid grey;
-        }
-
-        .otp-text {
-            padding-top: 20px;
-            font-size: 25px;
-            text-align: justify;
-        }
-    </style>
 </head>
 
-<body>
-
-    <div class="wrapper">
+<body style="box-sizing: border-box; width: 100%;">
+    <div style="padding: 20px 25px;
+                background-color: #ffffff;">
 
         <!--Mail topbar-->
-        <div class="content-container">
-            <div class="left-section">
+        <div style="display: flex;
+         flex-direction: row;
+         margin: 0 auto !important;
+         width: 60%;">
+            <div style="padding-top: 10px;
+            flex: 30%;">
                 <img src="images/nybsys_logo.png" class="logo">
             </div>
-            <div class="right-section">
-                <h2 class="verification-text">Verify your new Sentra PTT account</h2>
+            <div style="flex: 70%;">
+                <h2 style="text-align: right;">Verify your new Sentra PTT account</h2>
             </div>
         </div>
         <!--End of mail topbar-->
 
-        <hr class="content-container hr">
+        <hr style="display: flex;
+        flex-direction: row;
+        margin: 0 auto !important;
+        width: 60%;">
 
         <!--Message body-->
-        <div class="content-container">
-            <div class="otp-text">
+        <div style="display: flex;
+        flex-direction: row;
+        margin: 0 auto !important;
+        width: 60%;">
+            <div style="padding-top: 20px;
+            font-size: 18px;
+            text-align: justify;">
                 <p>
                     To verify your email address, please use the following One Time Password(OTP): <br><br>
                     <span><b>906235</b></span><br><br>
@@ -93,15 +47,12 @@
                     Customer Service will never ask you to disclose or verify your password or OTP. If you receive a
                     suspicious email with a link to update your account information, do not click on the link instead,
                     report the email to NybSys for investigation.<br><br>
-                    Thank you for being  with us! We hope to see you again soon.
+                    Thank you for being with us! We hope to see you again soon.
                 </p>
             </div>
         </div>
         <!--End of Message body-->
-
     </div>
-
-
 </body>
 
 </html>
